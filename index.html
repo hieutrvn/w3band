@@ -89,7 +89,7 @@
                            <h3 class="name-place">New York</h3>
                            <p class="date">Fri 27 Nov 2016</p>
                            <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                           <a href="#" class="buttom-buy">Buy Ticket</a>
+                           <button class="buttom-buy s-full-width js-buy-ticket">Buy Ticket</button>
 
                        </div>
                     </div>
@@ -100,7 +100,7 @@
                             <h3 class="name-place">Paris</h3>
                             <p class="date">Fri 27 Nov 2016</p>
                             <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="buttom-buy">Buy Ticket</a>
+                            <button class="buttom-buy s-full-width js-buy-ticket">Buy Ticket</button>
  
                         </div>
                      </div>
@@ -111,7 +111,7 @@
                             <h3 class="name-place">San Francisco</h3>
                             <p class="date">Fri 27 Nov 2016</p>
                             <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="buttom-buy">Buy Ticket</a>
+                            <button class="buttom-buy s-full-width js-buy-ticket">Buy Ticket</button>
  
                         </div>
                      </div>
@@ -133,9 +133,9 @@
             
         </div>
         
-        <div class="modal">
-            <div class="modal-container">
-                <div class="modal-close">
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
                     <i class="ti-close" ></i>
                 </div>
                 <header class="modal-header">
@@ -159,10 +159,40 @@
                     </button>
                 </div>
                 <footer class="modal-footer">
-                    <p class="modal-help">Need <a href="">help?</a></p>
+                    <p class="modal-help">Need <a target="_blank" href="https://www.facebook.com/tranhieuhalai">help?</a></p>
                 </footer>
             </div>
         </div>
     </div>
+    <!-- Show Box BuyTicket -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const closeBtn = document.querySelector('.js-modal-close')
+        
+        //Hàm hiển thị box Buy Ticket (thêm class open vào model)
+        function showBuyTickets(){
+            modal.classList.add('open')
+        }
+        //Hàm đóng box Buy Ticket (xóa class open của modal)
+        function closeBuyTickets(){
+            modal.classList.remove('open')
+        }
+        //Vòng lặp nút Buy Ticket (Nghe hành vi click nút Buy)
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+        //Nút close (Nghe hành vi click nút )
+        closeBtn.addEventListener('click', closeBuyTickets)
+
+        modal.addEventListener('click', closeBuyTickets)
+
+        // Ngưng hành động nổi bọt 
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        } )
+
+    </script>
 </body>
 </html>

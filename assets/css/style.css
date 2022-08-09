@@ -297,10 +297,14 @@ html{
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
+}
+
+.modal.open {
+    display: flex;
 }
 
 .modal-container {
@@ -309,6 +313,7 @@ html{
     max-width: calc(100% - 50px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 
 header.modal-header {
@@ -378,4 +383,15 @@ header.modal-header {
 /* Footer Page */
 #footer {
 
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
