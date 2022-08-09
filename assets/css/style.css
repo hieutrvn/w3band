@@ -235,9 +235,8 @@ html{
 
 /* Places */
 .places-list {
-    margin: 34px -8px 0;   
-    padding-bottom: 50px;
-}
+    margin: 34px -8px 50px;   
+    }
 
 .places-items {
     float: left;
