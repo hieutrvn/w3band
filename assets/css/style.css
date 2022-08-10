@@ -24,6 +24,11 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+
+.pull-right {
+    float: right !important;
+}
+
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -53,7 +58,25 @@ html{
     width: 50%;
 }
 
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 11px 19px;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    border: none;
 
+}
+
+.btn:hover {
+    background-color: #cccccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* Main */
 #main {
     
 }
@@ -184,7 +207,7 @@ html{
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
    
@@ -267,8 +290,7 @@ html{
 
 /* Places */
 .places-list {
-    margin-top: 34px;
-    margin-bottom: 50px;  
+    margin-top: 34px;  
     }
 
 
@@ -300,21 +322,6 @@ html{
 
 .detail {
     margin-top: 15px;
-}
-
-.buttom-buy {
-    margin-top: 15px;
-    display: inline-block;
-    padding: 11px 19px;
-    background-color: #000;
-    text-decoration: none;
-    color: #fff;
-
-}
-
-.buttom-buy:hover {
-    background-color: #cccccc;
-    color: #000;
 }
 
 .modal {
@@ -431,13 +438,6 @@ header.modal-header {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
-}
-.contact-form .form-submit-btn {
-    padding: 11px 16px;
-    background-color: #000;
-    color: #fff;
-    float: right;
-    border: none;
 }
 
 .contact-form .form-submit-btn:hover {
