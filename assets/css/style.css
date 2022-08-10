@@ -9,9 +9,6 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Common */
-.clear{
-    clear: both;
-}
 
 .text-white {
     color: #fff !important;
@@ -21,9 +18,22 @@ html{
     text-align: center !important;
 }
 
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+
 }
 
 .col{
@@ -32,6 +42,9 @@ html{
     padding-right: 8px;
 }
 
+.col-full{
+    width: 100%;
+}
 .col-third {
     width: calc(100% / 3 );
 }
@@ -393,6 +406,43 @@ header.modal-header {
 
 .modal-help a {
     color: #2196F3;
+}
+
+/* Contact */
+.contact-content {
+    margin-top: 40px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    font-size: 15px;
+
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}   
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form .form-submit-btn {
+    padding: 11px 16px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    border: none;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 /* Footer Page */
 #footer {
