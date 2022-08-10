@@ -444,9 +444,38 @@ header.modal-header {
     background-color: #ccc;
     color: #000;
 }
+/* Map Section */
+.map-section {
+
+}
+.map-section img{
+    width: 100%;
+    filter: grayscale(50%);
+}
 /* Footer Page */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 15px;
+}
+#footer .social-list {
+    font-size: 24px;
+       
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
 
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#footer .copy-right,
+#footer .copy-right a {
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 @keyframes modalFadeIn{
