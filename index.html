@@ -7,6 +7,7 @@
     <title>W3 Band</title>
     <link rel="icon" href="./assets/img/icons/iconpage.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -33,6 +34,9 @@
             <!-- Begin Search -->
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
+                </div>
+                <div id="mobile-menu" class="mobile-menu-btn ">
+                    <i class="menu-icon ti-menu"></i>
                 </div>
             <!-- End Search -->
         </div>
@@ -239,6 +243,22 @@
             event.stopPropagation()
         } )
 
+    </script>
+    <script>
+        const header = document.getElementById('header')
+        const mobileMenu = document.getElementById('mobile-menu')
+        
+        
+        mobileMenu.onclick = function() {
+            const isClose = header.clientHeight === 46
+            if(isClose){
+                header.style.height ='auto'
+            }
+            else {
+                header.style.height ='46px'
+
+            }
+        }
     </script>
 </body>
 </html>

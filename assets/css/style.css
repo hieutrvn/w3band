@@ -76,17 +76,6 @@ html{
     cursor: pointer;
 }
 
-/* Media queries */
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px){
-
-}
-
-/* Mobile */
-@media (max-width: 739px) {
-    
-}
-
 /* Main */
 #main {
     
@@ -101,6 +90,7 @@ html{
     background-color: #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -168,16 +158,26 @@ html{
     font-size: 12px;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
 
-#header .search-btn:hover {
+#header .search-btn:hover{
     background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    
+}
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
