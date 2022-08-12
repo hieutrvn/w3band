@@ -163,6 +163,13 @@ html{
     float: right;
     padding: 0 21px;
     cursor: pointer;
+    
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-btn:hover{
