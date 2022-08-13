@@ -196,7 +196,7 @@ html{
     position: relative;
     margin-top: 47px;
     padding-top: 53%;
-    background: url('/assets/img/sliders/chicago.jpg') top center / cover no-repeat;
+    background: url('../img/sliders/chicago.jpg') top center / cover no-repeat;
     
 }
 
@@ -206,6 +206,7 @@ html{
     color: #fff;
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 1px #000;
    
 }
 
