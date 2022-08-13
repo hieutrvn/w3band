@@ -444,7 +444,12 @@ header.modal-header {
     font-size: 18px;
     line-height: 1.5;
 }
-
+.contact-info a{
+    color: #367fbb;
+}
+.contact-info a:hover {
+    color: #020407;
+}
 .contact-form {
     font-size: 15px;
 
