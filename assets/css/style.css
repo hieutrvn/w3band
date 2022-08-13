@@ -67,6 +67,7 @@ html{
     text-decoration: none;
     color: #fff;
     border: none;
+    -webkit-appearance: none;
 
 }
 
